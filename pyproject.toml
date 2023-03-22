@@ -1,0 +1,21 @@
+requires = ["setuptools>=61.0", "requests>=2.26"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lord_of_the_rings"
+version = "0.1.1"
+authors = [
+  { name="Ivan Kashilov", email="ikashilov@gmail.com" },
+]
+description = "The Lord of the Rings SDK"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/ikashilov/ikashilov-SDK"
+"Bug Tracker" = "https://github.com/ikashilov/ikashilov-SDK/issues"
