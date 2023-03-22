@@ -5,11 +5,11 @@ This module provides a simple Python wrapper for The One API, a RESTful web serv
 You can install the module using pip:
 
 ```bash
-pip install -i https://test.pypi.org/simple/ lord-of-the-rings==0.1.1
+pip install -i https://test.pypi.org/simple/ lord-of-the-rings==0.1.2
 ```
 
 ## Usage
-To use this module, you will need an access token for The One API. You can get one by registering at https://the-one-api.dev/signup.
+To use this module, you will need an access token for The One API. You can get one by registering at https://the-one-api.dev/sign-up.
 
 Once you have your access token, you can create a new instance of the API wrapper:
 
@@ -55,7 +55,7 @@ For more information about The One API, check out the official documentation at 
 ## Testing
 To run the tests, navigate to the root directory of the module in your terminal and run the following command:
 ```python
- python3 -m unittest tests/*
+python3 -m unittest tests/lord_of_the_rings_test.py
 ```
 
 ## Contribution

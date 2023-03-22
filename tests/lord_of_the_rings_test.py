@@ -1,6 +1,6 @@
 import unittest
 from unittest.mock import MagicMock, patch
-from src.lord_of_the_rings.LordOfTheRings import LordOfTheRings
+from src.lord_of_the_rings.lord_of_the_rings import LordOfTheRings
 
 
 class TestLordOfTheRings(unittest.TestCase):

@@ -3,7 +3,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "lord_of_the_rings"
-version = "0.1.1"
+version = "0.1.2"
 authors = [
   { name="Ivan Kashilov", email="ikashilov@gmail.com" },
 ]

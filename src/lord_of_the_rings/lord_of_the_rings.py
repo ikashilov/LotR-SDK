@@ -36,15 +36,15 @@ class LordOfTheRings:
         self.session.headers = {'authorization': f'Bearer {token}'}
 
     def _request(self, path: str, limit: Optional[int] = None, page: Optional[int] = None, offset: Optional[int] = None,
-                 sort: Optional[str] = '', filters: Optional[Union[str, List[str]]] = None) -> requests.Response:
+                 sort: Optional[str] = None, filters: Optional[Union[str, List[str]]] = None) -> requests.Response:
         """Send a request to the LotR API endpoint.
 
         Args:
             path (str): The endpoint path.
-            limit (int, optional): The maximum number of results to return. Defaults to ''.
-            page (int, optional): The page number of results to return. Defaults to ''.
-            offset (int, optional): The number of results to skip. Defaults to ''.
-            sort (str, optional): The field to sort the results by. Defaults to ''.
+            limit (int, optional): The maximum number of results to return. Defaults to None.
+            page (int, optional): The page number of results to return. Defaults to None.
+            offset (int, optional): The number of results to skip. Defaults to None.
+            sort (str, optional): The field to sort the results by. Defaults to None.
             filters (Union[str, List[str]], optional): The filters to apply to the results.
                 If a string is passed, it is included in the query string without modification.
                 If a list is passed, each element is included in the query string with a '&' separator.
@@ -59,14 +59,14 @@ class LordOfTheRings:
 
     @staticmethod
     def add_optional_params(limit: Optional[int] = None, page: Optional[int] = None, offset: Optional[int] = None,
-                            sort: Optional[str] = '', filters: Optional[Union[str, List[str]]] = None) -> str:
+                            sort: Optional[str] = None, filters: Optional[Union[str, List[str]]] = None) -> str:
         """Constructs a query string from optional parameters.
 
         Args:
             limit (int, optional): The maximum number of results to return. Defaults to None.
-            page (int, optional): The page number of results to return. Required parameter.
-            offset (int, optional): The number of results to skip. Defaults to ''.
-            sort (str, optional): The field to sort the results by. Defaults to ''.
+            page (int, optional): The page number of results to return.  Defaults to None.
+            offset (int, optional): The number of results to skip. Defaults to None.
+            sort (str, optional): The field to sort the results by. Defaults to None.
             filters (Union[str, List[str]], optional): The filters to apply to the results.
                 If a string is passed, it is included in the query string without modification.
                 If a list is passed, each element is included in the query string with a '&' separator.
